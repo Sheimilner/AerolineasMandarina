@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital@1&family=Open+Sans:ital@1&display=swap');
+            </style>
+        <script src="https://kit.fontawesome.com/6ce56b12be.js" crossorigin="anonymous"></script>
+        <title>Aerolineas Mandarina</title>
+    </head>
+    <body>
+        <header>
+            <h1>Aerolineas Mandarina</h1>
+            <nav>
+                <ul id="listaNav">
+                <li class="linkNav"><a  href="index.html">Tu Reserva</a></li>
+                <li class="linkNav"><a  href="vuelos.html">Check-in</a></li>
+                <li class="linkNav"><a  href="contacto.html">Sobre Mandarina</a></li>
+                </ul>
+            </nav>
+            </header>
+        <div id="inicio">
+                <form>
+                    <label for="origen">Origen</label>
+                    <input
+                    type="text"
+                    name="Origen"
+                    id="origen"
+                    placeholder="Desde dónde volás?"
+                    />
+                    <label for="destino">Destino</label>
+                    <input
+                    type="text"
+                    name="Destino"
+                    id="destino"
+                    placeholder="Hacía dónde volás?"
+                    />
+                    <label for="ida">Fecha de ida</label>
+                    <input
+                    type="date"
+                    name="Ida"
+                    id="ida"
+                    placeholder="Elegí tu fecha de salida"
+                    />
+                    <label for="vuelta">Fecha de vuelta</label>
+                    <input
+                    type="date"
+                    name="Vuelta"
+                    id="vuelta"
+                    placeholder="Elegí tu fecha de vuelta"
+                    />
+                    <label for="adultos">Cantidad de Adultos</label>
+                    <input
+                    type="number"
+                    name="Cantidad de Adultos"
+                    id="cantidadAdultos"
+                    min="1"
+                    placeholder="Cuántos adultos viajan?"
+                    />
+                    <label for="ninos">Cantidad de Niños</label>
+                    <input
+                    type="number"
+                    name="Cantidad de Menores"
+                    id="cantidadMenores"
+                    min="0"
+                    placeholder="Cuántos menores viajan?"
+                    />
+                
+                    <label for="clase">Viajas en Bussiness? </label>
+                    <p id="si">si</p>
+                    <input type="checkbox" name="claseSi" id="claseSi" checked />
+                    <input id="busqueda" type="submit" value="Buscar" />
+                </form>
+            
+                <div id="texto">
+                    <h2>La Aerolinea que elige <br> la gente jóven</h2>
+                    <p>
+                        50% de descuento en billetes <br>
+                        Ofertas exclusivas para viajes en grupo
+                    </p>
+                </div>
+            
+        </div>
+
+        <div id="destinos">
+            <h2>Destinos</h2>
+            <h3 id="asia">Asia</h3>
+            <img id="imgAsia" src="asia.JPG" alt="asia">
+            <h3 id="europa">Europa</h3>
+            <img id="imgEuropa" src="europa.JPG" alt="europa">
+            <h3 id="america">América</h3>
+            <img id="imgAmerica" src="america.JPG" alt="america">
+            <input id="buscar" type="submit" value="Buscá tu vuelo" />
+           <div id="incluye">
+                <h4>Todos los vuelos incluyen:</h4>
+                <ul>
+                    <li>Facturación online</li>
+                    <li>Acceso a sala VIP</li>
+                    <li>Entretenimiento multimedia</li>
+                    <li>Embarque prioritario</li>
+                </ul>
+            </div> 
+        </div>
+        <div id="nosotros">
+            
+                <h2>Mandarina,<br> tu compañia para volar</h2>
+                <ul id="premios">
+                    <li>Premio "Aerolinea del año", 2021</li>
+                    <li>Premio "Opción favorita del pasajero jóven", 2021</li>
+                    <li>Premio "Innovacion en vuelos", 2021</li>
+                </ul>
+            
+            
+                <div class="comentario" id="comentario1">
+                    <img class="comillas" src="https://cdn-icons.flaticon.com/png/512/4992/premium/4992672.png?token=exp=1650652361~hmac=a245726c47fb2f8e21b826235e96a951" alt="comentario">
+                    <p>Volar con Mandarina se convierte en un verdadero lujo, gracias a la atención del personal que nos mima.</p>
+                    <img src="#" alt="foto">
+                    <h4>Enrique, mochilero</h4>
+                </div>
+                <div class="comentario" id="comentario2">
+                    <img class="comillas" src="https://cdn-icons.flaticon.com/png/512/4992/premium/4992672.png?token=exp=1650652361~hmac=a245726c47fb2f8e21b826235e96a951" alt="comentario">
+                    <p>Esta es mi aerolínea preferida, por su servicio de primera categoría y su relación calidad-precio.<br><br></p>
+                    <img src="#" alt="foto">
+                    <h4>Blanca, emprendedora</h4>
+                </div>
+                <div class="comentario" id="comentario3">
+                    <img class="comillas" src="https://cdn-icons.flaticon.com/png/512/4992/premium/4992672.png?token=exp=1650652361~hmac=a245726c47fb2f8e21b826235e96a951" alt="comentario">
+                    <p>Mandarina tiene ofertas inmejorables y vuela a muchos destinos. Me encata viajar con Mandarina!<br><br><br></p>
+                    <img src="#" alt="foto">
+                    <h4>Ana, estudiante</h4>
+                </div>
+                <a class="twitter-timeline" data-width="280" data-height="400" data-theme="dark" href="https://twitter.com/ANACargentina?ref_src=twsrc%5Etfw">Tweets by ANACargentina</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            
+        
+            <footer class="footer">
+                <div id="contacto">
+                    <h2>Contacta con Nosotros</h2>
+                    <ul>
+                        <i class="fa-brands fa-instagram"></i>
+                        <li class="redes"><a  href="">Instragram</a></li><br>
+                        <i class="fa-brands fa-twitter"></i>
+                        <li class="redes"><a href="">Twitter</a></li><br>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <li class="redes"><a href="">Facebook</a></li><br>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <li class="redes"><a href="">LinkedIn</a></li><br>
+                        <i class="fa-solid fa-envelope"></i>
+                        <li class="redes"><a  href=""mailto="mailto:mandarina@mandarina.com">Mail</a></li>
+                    </ul>
+                </div>
+                <div id="ubicacion">
+                    <h2>Ubicación</h2>
+                    
+                        <p id="amsterdam">AMSTERDAM <br>
+                            Van Diemenstraat 38 <br>
+                            1013NH Ámsterdam, <br>
+                            Países Bajos
+                        </p>
+                    
+                        <p id="oslo">OSLO <br>
+                            Trondheimsveien 135 <br>
+                            0570 Oslo <br>
+                            Noruega
+                        </p>
+                    
+                    
+                        <p id="londres">LONDRES  <br>
+                            Englefield Rd 23<br>
+                            London N1 4JX <br>
+                            Reino Unido<br>
+                        </p>
+                    
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
