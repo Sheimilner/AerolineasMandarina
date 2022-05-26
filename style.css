@@ -14,6 +14,7 @@
     background-size: cover;
 }
 
+
 header{
     font-family: 'Arsenal', sans-serif;
     width: 100%;
@@ -36,16 +37,23 @@ nav{
     width: 65%;
     justify-content: space-between;
 }
+
+
+
 .linkNav{
     display: inline-block;
     padding: 1% 4%;
-    border: 1px solid;
-    border-radius: 5%;
+    border: 2px solid;
+    border-radius: 2%;
     border-color: black;
     margin-left: 10%;
     margin-top: 3%;
-    
     background-color: #dcdfd6;
+}
+.linkNav:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -53,8 +61,12 @@ nav{
 a{
     color: black;
     text-decoration: none;
-    
+ }
+
+a:hover{
+    color: #dcdfd6;
 }
+
 
 form{
     grid-column: 1/2;
@@ -64,6 +76,7 @@ form{
     
 
 }
+/*https://www.youtube.com/watch?v=IxRJ8vplzAo*/
 
 form label{
     display: block;
@@ -79,6 +92,10 @@ input{
     height: 5%;
     width: 50%;
 }
+input:hover{
+    background-color: #c6c9c1;
+    color: white;
+    cursor: pointer;}
 
 
 #si{
@@ -103,6 +120,13 @@ input{
     padding: 1%;
     color: white;
     font-size:2vh;
+    transition: 1s;
+}
+
+#busqueda:hover{
+    background-color: white;
+    color: #2970db;
+    cursor: pointer
 }
 
 #texto{
@@ -149,12 +173,16 @@ input{
     grid-column: 1/2;
     grid-row: 3/4;
     margin: auto auto;
+    font-size: 3vh;
+    
+    
 }
 
 #destinos #europa{
     grid-column: 2/3;
     grid-row: 3/4;
     margin: auto auto;
+    font-size: 3vh;
 }
 
 
@@ -162,6 +190,7 @@ input{
     grid-column: 3/4;
     grid-row: 3/4;
     margin: auto auto;
+    font-size: 3vh;
 }
 
 #destinos #imgAsia{
@@ -171,7 +200,9 @@ input{
     grid-row: 4/5;
     margin: auto auto;
     
+    
 }
+
 
 #destinos #imgEuropa{
     border: 2px solid;
@@ -195,8 +226,10 @@ input{
     grid-row: 5/6;
     margin: auto auto;
     width: 50%;
-    height: 15%
+    height: 15%;
 } 
+
+
 
 
 
@@ -229,18 +262,25 @@ input{
     padding: 1%;
     color: white;
     font-size:2vh;
+    transition: 1s;
+}
+
+#buscar:hover{
+    background-color: white;
+    color: #2970db;
+    cursor: pointer
 }
 /*PÁGINA DE ABOUT US*/
 #nosotros{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: 4fr 2fr 3fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 3fr 2fr 1fr 1fr;
     background-image: url(./Ciudad.JPG);
     background-size: cover;
 }
 
-#nosotros h2{
+#subtitulo{
     grid-column: 1/3;
     grid-row: 2/3;
     margin: auto auto;
@@ -251,7 +291,7 @@ input{
     grid-row: 2/3;
     margin: auto auto;
     background-color: white;
-    padding:3%;
+    padding:1% 2%;
     margin-bottom: 2%;
 }
 
@@ -259,18 +299,39 @@ input{
     grid-column: 2/3;
     grid-row: 3/5;
     margin: auto auto;
+    height: 80%;
+    transition: 1.5s;
+}
+
+#comentario1:hover{
+  background-color: black;  
+    color: white;
 }
 
 #comentario2{
     grid-column: 3/4;
     grid-row: 3/5;
     margin: auto auto;
+    height: 80%;
+    transition: 1.5s;
+}
+
+#comentario2:hover{
+  background-color: black;  
+    color: white;
 }
 
 #comentario3{
     grid-column: 4/5;
     grid-row: 3/5;
     margin: auto auto;
+    height: 80%;
+    transition: 1.5s;
+}
+
+#comentario3:hover{
+  background-color: black;  
+    color: white;
 }
 
 .comentario{
@@ -286,15 +347,13 @@ input{
 
 .comentario p{
     display: block;
-    font-size: 2vh;
+    font-size: 1.5vh;
     padding-bottom: 15%;
 }
 
-.comentario img{
-    display: inline;
-}
+
 .comentario h4{
-    display: inline;
+    display: block;
     font-size: 2vh;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -306,6 +365,15 @@ input{
     height: 10%;
     margin-left: 0;
 
+
+}
+
+.personas{
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .twitter-timeline{
@@ -313,6 +381,8 @@ input{
     grid-row: 4/6;
     margin: auto auto;
     margin-right: 2%;
+    width: 280px;
+    height: 400px;
 }
 
 footer{
@@ -361,31 +431,457 @@ list-style: none;
 
 
 #ubicacion{
-  display: flex;
-flex-direction: row;
-margin-top: -10;   
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 3fr;
+  
     
 }
-#footer #ubicacion h2{
-  display: flex block;
-   width: 100%;
+#tituloUbicacion{
+grid-column: 1/4;
+grid-row: 0/1;
+
 }
 
 #amsterdam {
-   
+grid-column: 1/2;
+grid-row: 2/3;
     margin-left: 1%;
     margin-top: 10%;
 }
 
 #oslo{
-  
+    grid-column: 2/3;
+    grid-row: 2/3;
     margin-left: 1%;
     margin-top: 10%;
 }
 
 #londres{
-    display: inline;
+    grid-column: 3/4;
+    grid-row: 2/3;
     margin-left: 1%;
     margin-top: 10%;
 }
 
+.error {
+    color: black;
+    opacity: 1;
+    border: 2px solid;
+    border-color: red;
+}
+
+.correcto{
+    border: 2px solid;
+    border-color: green; 
+}
+
+    
+
+@media screen and (max-width:1350px) {
+    h1{
+     margin-top: 2%;
+     margin-left: 3%;
+     width: 35%;
+     font-size: 4vh;
+ }
+ nav{
+    
+     justify-content: space-between;
+ }
+ .linkNav{
+     display: inline-block;
+     padding: 1% 2%;
+     font-size: 15px;
+     border: 2px solid;
+     border-radius: 2%;
+     border-color: black;
+     margin-left: 8%;
+     margin-top: 3%;
+     background-color: #dcdfd6;
+ }
+ .linkNav:hover{
+     background-color: black;
+     color: white;
+     cursor: pointer;
+ }
+ input{
+    background-color:#dcdfd6;
+    height: 5%;
+    width: 70%;
+}
+ form label{
+    display: block;
+    margin-top: 3%;
+    color: white;
+    font-size: 1.5vh;
+    
+        
+}
+#si{
+    display: inline;
+    margin-left: 12%;
+    color: white;
+    font-size: 2vh;
+}
+#texto{
+    justify-content: center;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    margin-top: 82%;
+    padding-bottom: 3%;
+}
+
+#texto h2{
+    color: white;
+    font-size: 2vw;
+    font-size: 4vh;
+}
+
+#texto p{
+    color:#545454;
+    font-size: 2vh;
+}
+
+#destinos h2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: auto auto;
+    font-size: 4vh;
+    color: "black";
+}
+#destinos #asia{
+
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: auto auto;
+    font-size: 2vh;
+    
+    
+}
+
+#destinos #europa{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: auto auto;
+    font-size: 2vh;
+}
+
+
+#destinos #america{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin: auto auto;
+    font-size: 2vh;
+}
+#destinos #imgAsia{
+    border: 2px solid;
+    border-color: #ffffff;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: auto auto;
+    width: 70%;
+    
+}
+
+
+#destinos #imgEuropa{
+    border: 2px solid;
+    border-color: #ffffff;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin: auto auto;
+    width: 70%;
+}
+
+
+#destinos #imgAmerica{
+    border: 2px solid;
+    border-color: #ffffff;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    margin: auto auto;
+    width: 70%;
+}
+#buscar{
+    
+    width: 50%;
+    height: 20%;
+    font-size:1.5vh;
+}
+#subtitulo{
+    font-size: 2vh;
+}
+
+#premios{
+    font-size: 1.5vh;
+    padding:1% 4%;
+}
+.comentario p{
+    display: block;
+    font-size: 1.2vh;
+    padding-bottom: 15%;
+}
+
+.comentario h4{
+    display: block;
+    font-size: 1.4vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+#contacto h2{
+    
+    font-size:1.5vh;
+}    
+
+#contacto a{
+    font-size: 1vh;
+}
+#tituloUbicacion{
+    font-size:1.5vh;
+}
+
+#amsterdam{
+    font-size: 1vh;
+}
+#oslo{
+    font-size: 1vh;
+}
+#londres{
+    font-size: 1vh;
+}
+
+}
+.hamburguesa{
+     display: none;
+     cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:white;
+
+}
+
+@media screen and (max-width:650px) {
+.hamburguesa{
+    display: block;
+    margin-right: 20px;
+    margin-top: 30px;
+}   
+.hamburguesa.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamburguesa.active .bar:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+}
+
+.hamburguesa.active .bar:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+}
+
+.listaNav{
+    position: fixed;
+    left: -100%;
+    top: 100px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #dcdfd6;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    height: 40vh;
+
+
+}
+
+.linkNav{
+    margin: 16px 0;
+    display: block;
+    height: 50px;
+}
+.linkNav:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.listaNav.active{
+    left: 0;
+}
+input{
+    background-color:#dcdfd6;
+    margin: auto auto;
+    height: 5%;
+    width: 200%;
+}
+ form label{
+    display: block;
+    margin-top: 3%;
+    color: white;
+    font-size: 1.7vh;
+    
+        
+}
+#si{
+    display: none;
+    margin-left: 12%;
+    color: white;
+    font-size: 1.7vh;
+}
+#claseSi{
+    display: inline;
+    margin-left: -50%;
+}
+#busqueda{
+    width: 100%;
+    
+}
+#texto{
+    justify-content: center;
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 2/4;
+    margin-top: 120%;
+    margin-right: 25%;
+    padding-bottom: 3%;
+}
+
+#texto h2{
+    color: white;
+    font-size: 2vw;
+    font-size: 4vh;
+}
+
+#texto p{
+    color:#545454;
+    font-size: 2vh;
+}
+
+#destinos h2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: auto auto;
+    font-size: 4vh;
+    color: "black";
+}
+#destinos #asia{
+
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: auto auto;
+    font-size: 2vh;
+    
+    
+}
+
+#destinos #europa{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: auto auto;
+    font-size: 2vh;
+}
+
+
+#destinos #america{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin: auto auto;
+    font-size: 2vh;
+}
+#destinos #imgAsia{
+    border: 2px solid;
+    border-color: #ffffff;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: auto auto;
+    width: 70%;
+    
+}
+
+
+#destinos #imgEuropa{
+    border: 2px solid;
+    border-color: #ffffff;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin: auto auto;
+    width: 70%;
+}
+
+
+#destinos #imgAmerica{
+    border: 2px solid;
+    border-color: #ffffff;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    margin: auto auto;
+    width: 70%;
+}
+#buscar{
+    
+    width: 80%;
+    height: 20%;
+    font-size:1.5vh;
+}
+#destinos #incluye{
+  font-size: 1.5vh;
+  grid-column: 1/4;
+  margin-top: 37%;
+  padding: 2% 6%;
+    
+}
+#subtitulo{
+    font-size: 2vh;
+}
+
+#premios{
+    font-size: 1.5vh;
+    padding:1% 4%;
+}
+.comentario p{
+    display: block;
+    font-size: 1.2vh;
+    padding-bottom: 15%;
+}
+
+.comentario h4{
+    display: block;
+    font-size: 1.4vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+#contacto h2{
+    
+    font-size:1.5vh;
+}    
+
+#contacto a{
+    font-size: 1vh;
+}
+#tituloUbicacion{
+    font-size:1.5vh;
+}
+
+#amsterdam{
+    font-size: 1vh;
+}
+#oslo{
+    font-size: 1vh;
+}
+#londres{
+    font-size: 1vh;
+}
+#twitter-widget-0{  display: none; 
+}
+
+}

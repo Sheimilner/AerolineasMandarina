@@ -15,47 +15,52 @@
         <header>
             <h1>Aerolineas Mandarina</h1>
             <nav>
-                <ul id="listaNav">
+                <ul class="listaNav">
                 <li class="linkNav"><a  href="index.html">Tu Reserva</a></li>
                 <li class="linkNav"><a  href="vuelos.html">Check-in</a></li>
                 <li class="linkNav"><a  href="contacto.html">Sobre Mandarina</a></li>
                 </ul>
+                <div class="hamburguesa">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
             </header>
         <div id="inicio">
-                <form>
+                <form id="formulario">
                     <label for="origen">Origen</label>
                     <input
                     type="text"
-                    name="Origen"
+                    name="origen"
                     id="origen"
                     placeholder="Desde dónde volás?"
                     />
                     <label for="destino">Destino</label>
                     <input
                     type="text"
-                    name="Destino"
+                    name="destino"
                     id="destino"
                     placeholder="Hacía dónde volás?"
                     />
                     <label for="ida">Fecha de ida</label>
                     <input
                     type="date"
-                    name="Ida"
+                    name="ida"
                     id="ida"
                     placeholder="Elegí tu fecha de salida"
                     />
                     <label for="vuelta">Fecha de vuelta</label>
                     <input
                     type="date"
-                    name="Vuelta"
+                    name="vuelta"
                     id="vuelta"
                     placeholder="Elegí tu fecha de vuelta"
                     />
                     <label for="adultos">Cantidad de Adultos</label>
                     <input
                     type="number"
-                    name="Cantidad de Adultos"
+                    name="adultos"
                     id="cantidadAdultos"
                     min="1"
                     placeholder="Cuántos adultos viajan?"
@@ -63,7 +68,7 @@
                     <label for="ninos">Cantidad de Niños</label>
                     <input
                     type="number"
-                    name="Cantidad de Menores"
+                    name="menores"
                     id="cantidadMenores"
                     min="0"
                     placeholder="Cuántos menores viajan?"
@@ -106,7 +111,7 @@
         </div>
         <div id="nosotros">
             
-                <h2>Mandarina,<br> tu compañia para volar</h2>
+                <h2 id="subtitulo">Mandarina,<br> tu compañia para volar</h2>
                 <ul id="premios">
                     <li>Premio "Aerolinea del año", 2021</li>
                     <li>Premio "Opción favorita del pasajero jóven", 2021</li>
@@ -116,21 +121,21 @@
             
                 <div class="comentario" id="comentario1">
                     <img class="comillas" src="https://cdn-icons.flaticon.com/png/512/4992/premium/4992672.png?token=exp=1650652361~hmac=a245726c47fb2f8e21b826235e96a951" alt="comentario">
-                    <p>Volar con Mandarina se convierte en un verdadero lujo, gracias a la atención del personal que nos mima.</p>
-                    <img src="#" alt="foto">
+                    <p>Volar con Mandarina se convierte en un verdadero lujo, gracias a la atención del personal que nos mima.<br><br></p>
+                    <img class="personas" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="foto">
                     <h4>Enrique, mochilero</h4>
                 </div>
                 <div class="comentario" id="comentario2">
                     <img class="comillas" src="https://cdn-icons.flaticon.com/png/512/4992/premium/4992672.png?token=exp=1650652361~hmac=a245726c47fb2f8e21b826235e96a951" alt="comentario">
                     <p>Esta es mi aerolínea preferida, por su servicio de primera categoría y su relación calidad-precio.<br><br></p>
-                    <img src="#" alt="foto">
+                    <img class="personas" src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="foto">
                     <h4>Blanca, emprendedora</h4>
                 </div>
                 <div class="comentario" id="comentario3">
                     <img class="comillas" src="https://cdn-icons.flaticon.com/png/512/4992/premium/4992672.png?token=exp=1650652361~hmac=a245726c47fb2f8e21b826235e96a951" alt="comentario">
-                    <p>Mandarina tiene ofertas inmejorables y vuela a muchos destinos. Me encata viajar con Mandarina!<br><br><br></p>
-                    <img src="#" alt="foto">
-                    <h4>Ana, estudiante</h4>
+                    <p>Mandarina tiene ofertas inmejorables y vuela a muchos destinos. Me encata viajar con Mandarina!<br><br></p>
+                    <img class="personas" src="https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="foto">
+                    <h4> Cristina, estudiante</h4>
                 </div>
                 <a class="twitter-timeline" data-width="280" data-height="400" data-theme="dark" href="https://twitter.com/ANACargentina?ref_src=twsrc%5Etfw">Tweets by ANACargentina</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             
@@ -152,7 +157,7 @@
                     </ul>
                 </div>
                 <div id="ubicacion">
-                    <h2>Ubicación</h2>
+                    <h2 id="tituloUbicacion">Ubicación</h2>
                     
                         <p id="amsterdam">AMSTERDAM <br>
                             Van Diemenstraat 38 <br>
@@ -176,5 +181,6 @@
                 </div>
             </footer>
         </div>
+        <script src="script.js">  </script>
     </body>
 </html>
